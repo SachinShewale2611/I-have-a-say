@@ -20,7 +20,7 @@ body {
   height: 16px;
   cursor: pointer;
   margin: 1px;
-  filter: drop-shadow(3px 3px 3px #222222);
+  filter: drop-shadow(2px 2px 2px #222222);
 }
 
 .button:hover {
@@ -61,7 +61,6 @@ button:active .button:active {
   margin: 0px;
 }
 
-
 .comment-wrapper {
   width: 600px;
   margin: 20px auto;
@@ -95,18 +94,6 @@ input {
   width: 470px;
   font-size: 20px;
 }
-
-.comment-text {
-  /* color: rgb(5, 5, 5);
-  font-size: 22px;
-  border-radius: 16px;
-  border-bottom-left-radius: 0;
-  font-weight: 300;
-  width: fit-content;
-  padding: 4px 16px 4px 16px;
-  margin-left: 2px;
-  background-color: #00000031; */
-} 
 
 .button-and-likes-wrapper {
   display: flex;
@@ -143,7 +130,7 @@ input {
 }
 
 .replyButton {
-  filter: hue-rotate(279deg) drop-shadow(5px 5px 5px #222222);;
+  filter: hue-rotate(279deg) drop-shadow(2px 2px 2px #222222);;
 }
 
 .commentAndButtons {
@@ -156,6 +143,7 @@ input {
   padding: 4px 16px 4px 16px;
   margin-left: 2px;
   background-color: #00000031;
+  box-shadow: 3px 3px 6px #41414b70;
 }
 div>.comment-wrapper>.comment>.commentAndButtons>.comment-text {
   font-size: 24px;
