@@ -91,7 +91,7 @@ const createCommentNode = (comment) => {
 
     const replyButton = document.createElement("img");
     replyButton.classList.add("button", "replyButton");
-    replyButton.src = "reply.png";
+    replyButton.src = "assets/reply.png";
     replyButton.alt = "reply";
     replyButton.onclick = () => {
         commentNode.classList.toggle("hide-reply");
@@ -100,7 +100,7 @@ const createCommentNode = (comment) => {
 
     const likeButton = document.createElement("img");
     likeButton.classList.add("button");
-    likeButton.src = "like.png";
+    likeButton.src = "assets/like.png";
     likeButton.alt = "Like";
     likeButton.onclick = () => {
         comment.likes++;
@@ -110,7 +110,7 @@ const createCommentNode = (comment) => {
 
     const deleteButton = document.createElement("img");
     deleteButton.classList.add("button", "delete");
-    deleteButton.src = "delete.png";
+    deleteButton.src = "assets/delete.png";
     deleteButton.alt = "Delete";
     deleteButton.onclick = () => {
         deleteComment(comments, comment.id);
@@ -133,7 +133,7 @@ const createCommentNode = (comment) => {
 
     const addReplyButton = document.createElement("img");
     addReplyButton.classList.add("button", "reply-wrapper-button");
-    addReplyButton.src = "add.png"
+    addReplyButton.src = "assets/add.png"
     const addReply = () => {
         const replyText = replyInput.value.trim(" ");
         const commentId = comment.id;
@@ -159,7 +159,7 @@ const createCommentNode = (comment) => {
 
     const cancelReplyButton = document.createElement("img");
     cancelReplyButton.classList.add("button","reply-wrapper-button");
-    cancelReplyButton.src = "cancel.png"
+    cancelReplyButton.src = "assets/cancel.png"
     cancelReplyButton.onclick = () => commentNode.classList.add("hide-reply");
 
     const replyCommentsDomArray = comment.replies.map((reply) => {
