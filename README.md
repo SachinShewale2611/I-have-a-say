@@ -1,4 +1,4 @@
-# I-have-a-say(Nested Comment Section)
+# I-have-a-say (Nested Comment Section)
 
 
 This is a webpage where multiple comments can be added and those comments can have replies,likes & delete functionalities.
