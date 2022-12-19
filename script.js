@@ -140,7 +140,7 @@ const createCommentNode = (comment) => {
 
         const newCommentObject = createCommentObject(replyText);
         const commentObj = findCommentObject(comments, commentId);
-        commentObj.replies.push(newCommentObject);
+        commentObj.replies.unshift(newCommentObject);
 
         saveState();
         renderComments();
@@ -196,7 +196,7 @@ const addComment = () => {
 
     const newCommentObject = createCommentObject(commentText);
 
-    comments.push(newCommentObject);
+    comments.unshift(newCommentObject);
     saveState();
     renderComments();
 };
@@ -211,3 +211,4 @@ inputBox.forEach((box) => {
 
 addButton.addEventListener("click", addComment);
 renderComments();
+//push
