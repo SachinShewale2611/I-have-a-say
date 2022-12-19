@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](./images/screenshot.PNG)
+![Screenshot](./images/screenshot.png)
 
 ### Links
 
