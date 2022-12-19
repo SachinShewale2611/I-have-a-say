@@ -1,6 +1,5 @@
 # I-have-a-say (Nested Comment Section)
 
-
 This is a webpage where multiple comments can be added and those comments can have replies,likes & delete functionalities.
 
 ## Table of contents
@@ -15,8 +14,6 @@ This is a webpage where multiple comments can be added and those comments can ha
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-
-
 
 ## Overview
 
@@ -33,8 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![./images/screenshot.png](./images/screenshot.png)
-
+![./images/screenshot.png](./images/screenshot.jpg)
 
 ### Links
 
@@ -53,18 +49,14 @@ Users should be able to:
 
 While doing this project I have implemented the Javascript functionality of event Listener. Project helped to polish my css skills as well as JavaScript skills to render something which was running in my mind for nesting comments. I have learnt to implement HTML,CSS,JavaScript to meet design expectation.
 
-
 ### Continued development
 
 This is the nestedCommentSection in which on refresh we get backs to its initial state. Further, I'll make this to sustain it by providing login system.
 
-
 ### Useful resources
 
-- [https://www.w3schools.com/](https://www.w3schools.com/) - This helped me for strengthening the fundamentals of HTML and CSS. I really liked this site and will use it going forward whenever needed. 
+- [https://www.w3schools.com/](https://www.w3schools.com/) - This helped me for strengthening the fundamentals of HTML and CSS. I really liked this site and will use it going forward whenever needed.
 - [https://javascript.info/](https://javascript.info/) - This is an amazing website for building javascript fundamentals. I'd recommend it to anyone to learn Javasript from scratch.
-
-
 
 ## Author
 
