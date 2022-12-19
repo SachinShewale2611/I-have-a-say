@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/SachinShewale2611/I-have-a-say](https://github.com/SachinShewale2611/I-have-a-say)
-- Live Site URL: [https://sachinshewale2611.github.io/I-have-a-say/](https://sachinshewale2611.github.io/I-have-a-say/)
+- Live Site URL: [https://javascript-i-have-a-say.netlify.app/](https://javascript-i-have-a-say.netlify.app/)
 
 ## My process
 
