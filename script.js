@@ -158,7 +158,7 @@ const createCommentNode = (comment) => {
     })
 
     const cancelReplyButton = document.createElement("img");
-    cancelReplyButton.classList.add("button","reply-wrapper-button");
+    cancelReplyButton.classList.add("button", "reply-wrapper-button");
     cancelReplyButton.src = "assets/cancel.png"
     cancelReplyButton.onclick = () => commentNode.classList.add("hide-reply");
 

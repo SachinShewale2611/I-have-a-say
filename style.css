@@ -1,11 +1,14 @@
 body {
   margin: 40px 8px;
   font-family: "Poppins", sans-serif;
-  background: #f0dab5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f0dab5, #8dc8e6);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f0dab5, #8dc8e6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-  
+  background: #f0dab5;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f0dab5, #8dc8e6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f0dab5, #8dc8e6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
   color: #000000;
 }
 
@@ -27,22 +30,24 @@ body {
   height: 18px;
   margin: 0px;
 }
+
 .button:active {
   height: 16px;
   margin: 1px;
 }
+
 button:active .button:active {
   filter: none;
 }
 
 .add-button {
   border: none;
-  font-weight:700;
+  font-weight: 700;
   border-radius: 8px;
   width: 56px;
   height: 32px;
   text-align: center;
-  background-color: #87adff; 
+  background-color: #87adff;
   margin-left: 8px;
   filter: drop-shadow(3px 3px 3px #222222);
 }
@@ -50,12 +55,15 @@ button:active .button:active {
 .add-button:hover {
   filter: drop-shadow(3px 3px 5px #194276);
 }
+
 .add-button:active {
   filter: none;
 }
+
 .reply-wrapper-button {
   height: 24px;
 }
+
 .reply-wrapper-button:hover {
   height: 26px;
   margin: 0px;
@@ -73,7 +81,8 @@ button:active .button:active {
   max-width: 75vw;
   position: relative;
 }
-.comment::before{
+
+.comment::before {
   content: '';
   position: absolute;
   bottom: 3px;
@@ -90,8 +99,9 @@ input {
   background-color: #f5f5ff;
   border-radius: 5px;
   outline: 0;
-  
+
 }
+
 .comment-input {
   width: 470px;
   font-size: 20px;
@@ -105,8 +115,9 @@ input {
   gap: 8px;
 }
 
-.likes-text, .replies-text {
-  
+.likes-text,
+.replies-text {
+
   font-size: 10px;
   font-weight: bold;
   padding: 2px 6px;
@@ -127,12 +138,13 @@ input {
   margin-top: 8px;
 }
 
-.hide-reply >.commentAndButtons> .reply-wrapper {
+.hide-reply>.commentAndButtons>.reply-wrapper {
   display: none;
 }
 
 .replyButton {
-  filter: hue-rotate(279deg) drop-shadow(2px 2px 2px #222222);;
+  filter: hue-rotate(279deg) drop-shadow(2px 2px 2px #222222);
+  ;
 }
 
 .commentAndButtons {
@@ -147,6 +159,7 @@ input {
   background-color: #00000031;
   box-shadow: 3px 3px 6px #41414b70;
 }
+
 div>.comment-wrapper>.comment>.commentAndButtons>.comment-text {
   font-size: 24px;
   font-weight: 500;
