@@ -9,11 +9,9 @@ const localStorageKey = "state";
 // Get data from local strorge 
 const initializeComments = () => {
     const state = localStorage.getItem(localStorageKey);
-
     if (!state) {
         return [];
     }
-
     return JSON.parse(state);
 };
 
@@ -53,12 +51,10 @@ const findCommentObject = (comments, commentId) => {
 const deleteComment = (comments, commentId) => {
     for (let i = 0; i < comments.length; i++) {
         const comment = comments[i];
-
         if (comment.id === commentId) {
             comments.splice(i, 1);
             return;
         }
-
         deleteComment(comment.replies, commentId);
     }
 };
@@ -69,7 +65,6 @@ const renderComments = () => {
 
     comments.forEach((comment) => {
         const commentNode = createCommentNode(comment);
-
         commentWrapper.appendChild(commentNode);
     });
 };
@@ -166,9 +161,8 @@ const createCommentNode = (comment) => {
         return createCommentNode(reply);
     });
 
+    //Append all Elements
     commentNode.appendChild(commentAndButtons);
-
-
     commentAndButtons.appendChild(commentText);
     commentAndButtons.appendChild(buttonsAndLikesWrapper);
     commentAndButtons.appendChild(replyWrapper);
@@ -191,7 +185,7 @@ const createCommentNode = (comment) => {
 };
 
 
-// Add take input & new comment 
+//input validation and add new comment 
 const addComment = () => {
     const commentText = commentInput.value.trim(" ");
     commentInput.value = "";
@@ -206,7 +200,7 @@ const addComment = () => {
     saveState();
     renderComments();
 };
-
+//Event Listner for Add button
 inputBox.forEach((box) => {
     box.addEventListener("keypress", function (e) {
         if (e.key === "Enter") {

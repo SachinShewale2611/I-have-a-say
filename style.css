@@ -16,7 +16,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-left: 24px; */
 }
 
 .button {
@@ -111,7 +110,6 @@ input {
   display: flex;
   align-items: center;
   padding: 4px;
-  /* padding-left: 1px; */
   gap: 8px;
 }
 
