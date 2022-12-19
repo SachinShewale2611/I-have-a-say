@@ -7,9 +7,8 @@ body {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #f0dab5, #8dc8e6);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
   color: #000000;
+  background-attachment: fixed;
 }
 
 .input-and-button-wrapper {
