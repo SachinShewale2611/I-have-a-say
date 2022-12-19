@@ -70,7 +70,7 @@ button:active .button:active {
 .comment {
   margin-left: 38px;
   margin-top: 12px;
-  max-width: 50vw;
+  max-width: 75vw;
   position: relative;
 }
 .comment::before{
