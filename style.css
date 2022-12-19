@@ -25,16 +25,10 @@ body {
 }
 
 .button:hover {
-  height: 18px;
-  margin: 0px;
+  filter: drop-shadow(2px 2px 2px #7db1ff);
 }
 
-.button:active {
-  height: 16px;
-  margin: 1px;
-}
-
-button:active .button:active {
+button:active,.replyButton:active,.add-button:active, .button:active {
   filter: none;
 }
 
@@ -52,10 +46,6 @@ button:active .button:active {
 
 .add-button:hover {
   filter: drop-shadow(3px 3px 5px #194276);
-}
-
-.add-button:active {
-  filter: none;
 }
 
 .reply-wrapper-button {
@@ -141,7 +131,9 @@ input {
 
 .replyButton {
   filter: hue-rotate(279deg) drop-shadow(2px 2px 2px #222222);
-  ;
+}
+.replyButton:hover {
+  filter: hue-rotate(279deg) drop-shadow(2px 2px 2px #85b9f0);
 }
 
 .commentAndButtons {
