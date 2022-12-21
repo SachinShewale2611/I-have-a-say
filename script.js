@@ -33,20 +33,6 @@ const createCommentObject = (commentText) => {
     };
 };
 
-//find Comment Object
-const findCommentObject = (comments, commentId) => {
-    for (const element of comments) {
-        const comment = element;
-        if (comment.id === commentId) {
-            return comment;
-        }
-        const foundComment = findCommentObject(comment.replies, commentId);
-        if (foundComment) {
-            return foundComment;
-        }
-    }
-};
-
 //Delete Comment
 const deleteComment = (comments, commentId) => {
     for (let i = 0; i < comments.length; i++) {
@@ -131,16 +117,13 @@ const createCommentNode = (comment) => {
     addReplyButton.src = "assets/add.png"
     const addReply = () => {
         const replyText = replyInput.value.trim(" ");
-        const commentId = comment.id;
-
         if (replyText === "") {
             alert("Please enter a reply");
             return;
         }
 
         const newCommentObject = createCommentObject(replyText);
-        const commentObj = findCommentObject(comments, commentId);
-        commentObj.replies.unshift(newCommentObject);
+        comment.replies.unshift(newCommentObject);
 
         saveState();
         renderComments();
