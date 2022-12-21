@@ -194,4 +194,3 @@ inputBox.forEach((box) => {
 
 addButton.addEventListener("click", addComment);
 renderComments();
-//push
